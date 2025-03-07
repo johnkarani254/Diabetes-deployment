@@ -18,7 +18,7 @@ def predict(request):
 
 
 def result(request):
-    data = pd.read_csv(r"C:\USERS\GRACE\PycharmProjects\DiabetesPrediction\diabetes.csv")
+    data = pd.read_csv("C:/Users/JOHN-analyst/OneDrive/Desktop/DJANGO/JOHN-DEPLOYMENT/diabetes.csv")
     X = data.drop("Outcome", axis=1)
     Y = data['Outcome']
     X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
